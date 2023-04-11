@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+.logo {
+  width: 20%;
+  display: grid;
+  place-content: center;
+}
+.logo h2 {
+  font-size: 1.5rem;
+}
+
+.bg-clip {
+  background-image: linear-gradient(to right, purple, orange);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+  color: transparent;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+}
+
+#active {
+  color: black;
+}
+.navbar li {
+  list-style: none;
+  margin: 0px 30px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.navbar li a:hover {
+  color: black;
+}
+
+.btn {
+  width: 20%;
+  display: grid;
+  place-content: center;
+}
+
+.btn button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 0;
+  outline: 1px solid white;
+  color: #fff;
+  background-image: linear-gradient(to right, purple, orange);
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  width: 40%;
+}
+
+.col-2 {
+  width: 40%;
+}
+.col-2 img {
+  width: 100%;
+}
+.discover-video-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.discover-video-btn button {
+  border: 0;
+  outline: 0;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 30px 30px 150px;
+}
+
+footer i {
+  margin-right: 30px;
+}
+.fa-facebook {
+  transition: all 0.5s;
+}
+.fa-facebook:hover {
+  color: dodgerblue;
+  transform: scale(1.5, 1.5);
+  cursor: pointer;
+}
+
+.fa-twitter {
+  transition: all 0.5s;
+}
+.fa-twitter:hover {
+  color: dodgerblue;
+  transform: scale(1.5, 1.5);
+  cursor: pointer;
+}
+.fa-github {
+  transition: all 0.5s;
+}
+
+.fa-github:hover {
+  color: black;
+  transform: scale(1.5, 1.5);
+  cursor: pointer;
+}
+
+.fa-instagram {
+  transition: all 0.5s;
+}
+
+footer img {
+  width: 15px;
+  height: 15px;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+
+footer img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
